@@ -1,0 +1,27 @@
+{
+  "name": "week2",
+  "version": "1.0.0",
+  "description": "Ejercicios semana 2 . Bootcamp Madrid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alce65/week2_2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alce65/week2_2023/issues"
+  },
+  "homepage": "https://github.com/alce65/week2_2023#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
