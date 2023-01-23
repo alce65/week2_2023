@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Ejercicios semana 2 . Bootcamp Madrid",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "prepare": "husky install"
