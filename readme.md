@@ -14,4 +14,40 @@ Ejercicios semana 2 . Bootcamp Madrid
 - Añadir `npm i -D eslint-config-prettier`
 - Incluir en eslint.json "prettier" como última extensión
 - Añadir carpeta con huskies
-- Iniciar husky: `>npx husky install`
+- Iniciar husky: `npx husky install`
+
+## Jest install / setup
+
+- `npm i -D jest @types/jest @babel/plugin-transform-modules-commonjs`
+
+- .eslintrc.json
+
+```json
+  "env": {
+    "jest": true
+  },
+```
+
+- jsconfig.json
+
+```json
+{
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}
+```
+
+- package.json
+
+```json
+"babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+```
