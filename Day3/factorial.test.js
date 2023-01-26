@@ -16,7 +16,6 @@ describe('Given factorial function', () => {
     test('Then factorial of 3 should be 6', () => {
       const r = factorial(3);
       expect(r).toBe(6);
-      expect([]).toBe([]);
     });
     test('Then factorial of 15 should be 1307674368000', () => {
       const r = factorial(15);
