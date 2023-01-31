@@ -81,9 +81,9 @@ describe('Given findNeighborPositions function', () => {
       'And the coordinates are %i,%i',
       (i, j, expected) => {
         test(`returned valid neighbors should be ${expected}`, () => {
-          // act
+          // Act
           const result = findNeighborPositions(i, j, array);
-          // assert
+          // Assert
           expect(result.length).toBe(expected);
         });
       }
@@ -116,9 +116,9 @@ describe('Given findNeighborPositions function', () => {
       'And the coordinates are %i,%i',
       (i, j, expected) => {
         test(`returned valid neighbors should be ${expected}`, () => {
-          // act
+          // Act
           const result = findNeighborPositions(i, j, array);
-          // assert
+          // Assert
           expect(result.length).toBe(expected);
         });
       }
@@ -155,9 +155,9 @@ describe('Given countAliveNeighbors function', () => {
       'And the coordinates are %i,%i',
       (i, j, expected) => {
         test(`returned sum of alive neighbors should be ${expected}`, () => {
-          // act
+          // Act
           const result = countAliveNeighbors(i, j, array);
-          // assert
+          // Assert
           expect(result).toBe(expected);
         });
       }
@@ -195,9 +195,9 @@ describe('Given willBeAlive function', () => {
       'And the coordinates are %i,%i',
       (i, j, expected) => {
         test(`returned alive state should be ${expected}`, () => {
-          // act
+          // Act
           const result = willBeAlive(i, j, array);
-          // assert
+          // Assert
           expect(result).toBe(expected);
         });
       }
@@ -218,9 +218,9 @@ describe('Given liveCycle function', () => {
       [1, 0, 1],
     ];
     test('result should be a new array 3 x 3', () => {
-      // act
+      // Act
       const result = liveCycle(array);
-      // assert
+      // Assert
       expect(result).toEqual(expected);
     });
   });

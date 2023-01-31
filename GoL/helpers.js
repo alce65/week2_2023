@@ -25,7 +25,7 @@ const filterValidPosition = (item, maxFil, maxCol) =>
   item[0] >= 0 && item[1] >= 0 && item[0] <= maxFil && item[1] <= maxCol;
 
 export const findNeighborPositions = (i = 0, j = 0, array = []) => {
-  // posiciones al rededor de (i,j)
+  // Info: posiciones al rededor de (i,j)
   // array[i-1][j-1],array[i-1][j],array[i-1][j+1],
   // array[i][j-1],array[i][j],array[i][j+1],
   // array[i+1][j-1],array[i+1][j],array[i+1][j+1]
@@ -87,14 +87,14 @@ export const willBeAlive = (i = 0, j = 0, array = []) => {
   if (!array.length) return 0;
   const countValidCells = countAliveNeighbors(i, j, array);
   return array[i][j] === 1
-    ? // starting alive
+    ? // Info: starting alive
       forLiveCells(countValidCells)
-    : // starting dead
+    : // Info: starting dead
       forDeadCells(countValidCells);
 };
 
 export const liveCycle = (array) => {
-  // localArray = array.map(item => [...item])
+  // Info: localArray = array.map(item => [...item])
   const localArray = array.map((item, i) =>
     item.map((_item, j) => willBeAlive(i, j, array))
   );

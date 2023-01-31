@@ -3,18 +3,18 @@ const { randomBoard, renderBoard } = require('./shell');
 describe('Given randomBoard', () => {
   describe('When its invocated without arguments', () => {
     test('Then it should return a 5x5 array', () => {
-      // act
+      // Act
       const r = randomBoard();
-      // assert
+      // Assert
       expect(r.length).toBe(5);
       expect(r[0].length).toBe(5);
     });
   });
   describe('When its invocated with arguments m & n', () => {
     test('Then it should return a mxn array', () => {
-      // act
+      // Act
       const r = randomBoard(10, 12);
-      // assert
+      // Assert
       expect(r.length).toBe(10);
       expect(r[0].length).toBe(12);
     });
@@ -24,7 +24,7 @@ describe('Given randomBoard', () => {
 describe('Given renderBoard', () => {
   describe('When its invocated with a initial board', () => {
     test('Then it should console and return a new board', () => {
-      // arrange
+      // Arrange
       const initialBoard = [
         [1, 0, 1, 0, 1],
         [0, 1, 0, 1, 0],
@@ -32,9 +32,9 @@ describe('Given renderBoard', () => {
         [1, 1, 1, 0, 0],
         [0, 0, 0, 0, 0],
       ];
-      // act
+      // Act
       const r = renderBoard(initialBoard);
-      // assert
+      // Assert
       expect(r.length).toBe(initialBoard.length);
       expect(r[0].length).toBe(initialBoard[0].length);
       expect(r).not.toEqual(initialBoard);
