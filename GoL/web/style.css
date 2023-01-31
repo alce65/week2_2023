@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  max-width: 8rem;
+}
+input {
+  width: 100%;
+}
+
+section {
+  margin-block-start: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.fil {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.cell {
+  border: 1px solid gainsboro;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.live {
+  background-color: brown;
+}
